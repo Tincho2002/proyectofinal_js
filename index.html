@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VET-OK! FOOD - CARRITO DE COMPRAS</title>
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="four columns">
+                    <img class="logo" src="img/logov-footer.png" id="logo">
+                </div>
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <a class="navbar-brand" href="#"></a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Promo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./paginas/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./paginas/ranking.html">Ranking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./paginas/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <li class="submenu">
+                                <img class="huella me-2" src="img/huella.png" id="img-carrito">
+                                <div id="carrito">
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>IMAGEN</th>
+                                                <th>MARCA</th>
+                                                <th>PRECIO</th>
+                                                <th>CANTIDAD</th>
+                                                <th>🗑️</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="u-full-width button-primary button input vaciar-carrito">VACIAR CARRITO</a>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h1>VET-OK! FOOD</h1>
+                        <h2>FIN DE SEMANA MASCOTERO</h2>
+                        <h3>ALIMENTOS SECOS Y HÚMEDOS DESCUENTO DEL 30%...</h3><br>
+                        <!--<main class="form-signin">
+                            <form>
+
+                                <h1 class="h3 mb-3 fw-normal">Ingresar al sitio</h1>
+
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="emailAddress" placeholder="nombre@mail.com">
+                                    <label for="emailAddress">Dirección de correo</label>
+                                </div><br>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                                    <label for="password">Contraseña</label>
+                                </div>
+
+                                <div class="checkbox mb-3">
+                                    <label>
+                                  <input type="checkbox" id="rememberMe" value="remember-me">Recordarme en este navegador
+                                </label>
+                                </div>
+                                <button class="w-100 btn btn-lg btn-dark" id="btnLogin" type="submit">Iniciar sesión</button>
+                                <button class="w-100 btn btn-lg btn-warning" id="btnVaciarSessionStorage" type="submit">Borrar mis datos de
+                                sesión</button>
+                                <button class="w-100 btn btn-lg btn-danger" id="btnVaciarLocalStorage" type="submit">Borrar todos los datos</button>
+                            </form>
+                        </main>-->
+                        <div>
+                            <!--<form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscá aquí el alimento para tu amigo..." aria-label="Search">
+                                <button class="btn btn-outline-warning" type="submit"><strong>BUSCAR</strong></button>
+                            </form>
+                            <br>-->
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="email" id="mail" name="mail" placeholder="Ingresá tu mail">
+                                <button class="btn btn-outline-warning" type="submit"><strong>ENVIAR</strong></button>
+                            </form>
+                            <br>
+                            <form name="form1">
+                                <input type="text" name="txt"> User (squevedo)
+                                <input type="text" name="num"> Pass (cabj1970)<br><br>
+                                <button type="button" class="btn btn-outline-warning" value="ir a.." onclick="usrpas()"><strong>IR A</strong></button>
+                            </form>
+                        </div>
+                        <br>
+                        <!--<div>
+                            <button type="button" class="btn btn-outline-warning" value="Reiniciar" onclick="Reiniciar()" id="submit-Reiniciar"><strong>REINICIAR</strong></button>
+                        </div><br>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <h4>TODAS LAS MARCAS</h4>
+                    <p>Disponibilidad Diaria</p>
+                    <p>Stock Permanente</p>
+                </div>
+                <div class="four columns icono icono2">
+                    <h4>ALIMENTOS SECOS Y HUMEDOS</h4>
+                    <p>Descuentos Increíbles!!!</p>
+                </div>
+                <div class="four columns icono icono3">
+                    <h4>PERROS Y GATOS</h4>
+                    <p>Cachorros - Jóvenes - Adultos</p>
+                    <p>Mascotas con Tratamientos Especiales</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="lista-productos" class="container">
+        <h1 id="encabezado" class="encabezado">ARMA TU CARRITO YA!!!</h1>
+        <h2> STOCKEATE EN ALIMENTOS SECOS Y HUMEDOS</h2><br><br>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID1.jpg" class="imagen-secocat u-full-width">
+                    <div class="info-card">
+                        <h4>EXCELLENT</h4>
+                        <p>Adult Cat Smart </p>
+                        <p>15kg</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 14.400 <span class="u-pull-right ">AHORA $ 10.080 </span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID2.jpg" class="imagen-secocat u-full-width">
+                    <div class="info-card">
+                        <h4>ROYAL CANIN</h4>
+                        <p>Regular Fit</p>
+                        <p>15kg</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 15.100 <span class="u-pull-right ">AHORA $ 10.570 </span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID3.jpg" class="imagen-secocat u-full-width">
+                    <div class="info-card">
+                        <h4>CAT CHOW</h4>
+                        <p>Adultos Pescado</p>
+                        <p>15kg</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 10.050 <span class="u-pull-right ">AHORA $ 7.035</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID4.jpg" class="imagen-pouchcat u-full-width">
+                    <div class="info-card">
+                        <h4>PROPLAN</h4>
+                        <p>Pouch Sterilized Cat</p>
+                        <p>Caja de 12 sobres de 85gr c/u</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 3.800 <span class="u-pull-right ">AHORA $ 2.660 </span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID5.jpg" class="imagen-pouchcat u-full-width">
+                    <div class="info-card">
+                        <h4>CAT CHOW</h4>
+                        <p>Pouch Adultos Pescado</p>
+                        <p>Caja de 12 sobres de 85gr c/u</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 2.300 <span class="u-pull-right ">AHORA $ 1.610 </span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID6.jpg" class="imagen-pouchcat u-full-width">
+                    <div class="info-card">
+                        <h4>ROYAL CANIN</h4>
+                        <p>Pouch Instinctive Cat</p>
+                        <p>Caja de 12 sobres de 85gr c/u</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 4.800 <span class="u-pull-right ">AHORA $ 3.360</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID7.jpg" class="imagen-secodog u-full-width">
+                    <div class="info-card">
+                        <h4>EXCELLENT</h4>
+                        <p>Dog Raza Mdna Y Gde Smart</p>
+                        <p>15Kg</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 8.300 <span class="u-pull-right ">AHORA $ 5.810 </span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID8.jpg" class="imagen-secodog u-full-width">
+                    <div class="info-card">
+                        <h4>EUKANUBA</h4>
+                        <p>Adult Large Breed</p>
+                        <p>15kg</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 11.300 <span class="u-pull-right ">AHORA $ 7.910 </span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID9.png" class="imagen-secodog u-full-width">
+                    <div class="info-card">
+                        <h4>ROYAL CANIN</h4>
+                        <p>Maxi Adult</p>
+                        <p>15kg</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 13.700 <span class="u-pull-right ">AHORA $ 9.590</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID10.jpg" class="imagen-pouchdog u-full-width">
+                    <div class="info-card">
+                        <h4>DOG CHOW</h4>
+                        <p>Pouch Adult Dog Chicken</p><br>
+                        <p>Caja de 15 sobres de 100gr c/u</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 4.300 <span class="u-pull-right ">AHORA $ 3.010</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID11.png" class="imagen-pouchdog u-full-width">
+                    <div class="info-card">
+                        <h4>ROYAL CANIN</h4>
+                        <p>Pouch Mini Adult</p><br>
+                        <p>Caja de 12 sobres de 85gr c/u</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 3.000 <span class="u-pull-right ">AHORA $ 2.100</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ID12.jpg" class="imagen-pouchdog u-full-width">
+                    <div class="info-card">
+                        <h4>OPTIMUN</h4>
+                        <p>Pouch Perro Adulto Raza Mediana Y Grande</p>
+                        <p>Caja de 12 sobres de 100gr c/u</p>
+                        <img src="img/huella2.png">
+                        <p class="precio">ANTES $ 2.300 <span class="u-pull-right ">AHORA $ 1.610</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <nav id="principal" class="menu">
+                        <a class="enlace" href="#">Nosotros somos VET-OK!</a>
+                        <a class="enlace" href="#">Contactanos</a>
+                        <a class="enlace" href="#">Aplicaciones Móviles</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav id="secundaria" class="menu">
+                        <a class="enlace" href="#">Servicios</a>
+                        <a class="enlace" href="#">Newsletter</a>
+                        <a class="enlace" href="#">Teléfonos Útiles</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <img class="logo" src="img/logov-footer.png" id="logo">
+                    <img src="img/huella2.png">
+                    <img class="huella me-2" src="img/huella.png" id="huella-footer">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--<script src="js/app.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+    <script src="js/usuario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>

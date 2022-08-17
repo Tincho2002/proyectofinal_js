@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "tipo": "Seco",
+        "nombre": "EXCELLENT",
+        "precio": 14400,
+        "foto": "../img/id1.jpg"
+    },
+    {
+        "id": 2,
+        "tipo": "Seco",
+        "nombre": "ROYAL CANIN",
+        "precio": 15100,
+        "foto": "../img/id2.jpg"
+    },
+    {
+        "id": 3,
+        "tipo": "Seco",
+        "nombre": "CAT CHOW",
+        "precio": 10050,
+        "foto": "../img/id3.jpg"
+    },
+    {
+        "id": 4,
+        "tipo": "Humedo",
+        "nombre": "PROPLAN",
+        "precio": 3800,
+        "foto": "../img/id4.jpg"
+    },
+    {
+        "id": 5,
+        "tipo": "Humedo",
+        "nombre": "CAT CHOW",
+        "precio": 2300,
+        "foto": "../img/id5.jpg"
+    },
+    {
+        "id": 6,
+        "tipo": "Humedo",
+        "nombre": "ROYAL CANIN",
+        "precio": 4800,
+        "foto": "../img/id6.jpg"
+    },
+    {
+        "id": 7,
+        "tipo": "Seco",
+        "nombre": "EXCELLENT",
+        "precio": 8300,
+        "foto": "../img/id7.jpg"
+    },
+    {
+        "id": 8,
+        "tipo": "Seco",
+        "nombre": "EUKANUBA",
+        "precio": 11300,
+        "foto": "../img/id8.jpg"
+    },
+    {
+        "id": 9,
+        "tipo": "Seco",
+        "nombre": "ROYAL CANIN",
+        "precio": 13700,
+        "foto": "../img/id9.png"
+    },
+    {
+        "id": 10,
+        "tipo": "Humedo",
+        "nombre": "DOG CHOW",
+        "precio": 4300,
+        "foto": "../img/id10.jpg"
+    },
+    {
+        "id": 11,
+        "tipo": "Humedo",
+        "nombre": "ROYAL CANIN",
+        "precio": 3000,
+        "foto": "../img/id11.png"
+    },
+    {
+        "id": 12,
+        "tipo": "Humedo",
+        "nombre": "OPTIMUN",
+        "precio": 2300,
+        "foto": "../img/id12.jpg"
+    }
+]
